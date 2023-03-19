@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemig-Kaydol</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+
+    <style>
+        .card {
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translate(10px, -10px);
+            transition: all 0.5s;
+            box-shadow: 2px 2px 20px red;
+        }
+
+        .btn {
+            transition: all 0.4s;
+            background-color: green;
+        }
+
+        .btn:hover {
+            transform: translate(5px, -5px);
+            transition: all 0.5s;
+            box-shadow: 2px 2px 30px rgb(8, 8, 8);
+            color: yellow;
+        }
+
+        button a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Burası Navbar Alanı-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-1" href="/index.html">
+                <img src="images/Udemig.png" style="width: 50px;">
+                Udemig
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menü</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/egitimler.html">Eğitimlerimiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/iletisim.html" class="nav-link">İletişim</a>
+                        </li>
+                    </ul>
+                    <div class="">
+                        <a href="/kaydol.html" class="btn bg-danger">Kaydol</a>
+                        <a href="/giris.html" class="btn bg-primary">Giriş Yap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--ANSAYFA İÇERİĞİ-->
+
+    <div class="row align-items-center justify-content-center" style="height: 90vh;">
+        <div class="container col-4 border shadow p-3 rounded">
+            <form>
+                <div class="mb-3 d-flex justify-content-center">
+                    <img src="/images/Udemig.png" style="width: 70px;" alt="">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email adresiniz</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">E-postanızı asla başka biriyle paylaşmayacağız..</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Şifre</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Kontrol Edildi </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Giriş Yap</button>
+                <button type="submit" class="btn btn-primary">
+                    <a href="/kaydol.html" class="text-white ">Kayıt Ol</a>
+
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!--Bootstrap scrip Kodları-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
